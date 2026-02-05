@@ -76,15 +76,5 @@ public class RepositorioClientes {
             throw new FalhaPersistenciaException("Falha ao carregar pedidos do arquivo");
         }
     }
-
-    public static void main(String[] args) {
-        RepositorioClientes repositorioClientes = new RepositorioClientes();
-        Cliente c = new Cliente("65", "bgr", "rew", "765");
-        Cliente c1 = new Cliente("65", "vf", "re3", "76s");
-        try {
-            repositorioClientes.removerCliente("76");
-        } catch (ClienteNaoEncontradoException e) {
-            System.out.println("Cliente não Encontrado");   
-        }
-    }
 }
+
