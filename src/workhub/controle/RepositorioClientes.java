@@ -54,10 +54,6 @@ public class RepositorioClientes {
         return cli;
     }
 
-    public void listarClientes() {
-        
-    }
-
     public void salvarArquivo(String caminho) throws FalhaPersistenciaException {
         try (FileOutputStream fileOut = new FileOutputStream(caminho);
             ObjectOutputStream oos = new ObjectOutputStream(fileOut)) {
@@ -77,4 +73,5 @@ public class RepositorioClientes {
         }
     }
 }
+
 
